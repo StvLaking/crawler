@@ -13,8 +13,7 @@ class TutorialItem(scrapy.Item):
     # name = scrapy.Field()
     pass
 
-
-class DmozItem(Item):
-   title=Field()
-   link=Field()
-   desc=Field()
+class DmozItem(scrapy.Item):
+	title=scrapy.Field()
+	link=scrapy.Field()
+	desc=scrapy.Field()
