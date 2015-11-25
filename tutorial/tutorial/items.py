@@ -17,3 +17,8 @@ class DmozItem(scrapy.Item):
 	title=scrapy.Field()
 	link=scrapy.Field()
 	desc=scrapy.Field()
+
+class ArticleItem(scrapy.Item):
+	title=scrapy.Field()
+	link=scrapy.Field()
+	desc=scrapy.Field()
