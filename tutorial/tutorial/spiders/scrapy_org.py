@@ -34,4 +34,25 @@ class ScrapyOrgSpider(scrapy.Spider):
 			relative_url=site.css('.l.square a').xpath('@href').extract()
 			item['detailLink']=urljoin_rfc(base_url,relative_url)
 			item['catalog']=site.css('tr > td:nth-child(2)::text').extract()
+			item['workLocation']=site.css('tr > td:nth-child(3)::text').extract()
+			item['recruitNumber']=site.css('tr > td:nth-child(4)::text').extract()
+			item['publishTime']=site.css('tr > td:nth-child(5)::text').extract()
+			items.append(item)
 
+		sites_odd=sel.css('table.tablelist tr.odd')
+		for site in sites_odd:
+			item = JobItem()
+			item['name']=site.css('.l.square a').xpath('text()').extract()
+			relative_url=site.css('.l.square a').xpath('@href').extract()
+			item['detailLink']=urljoin_rfc(base_url,relative_url)
+			item['catalog']=site.css('tr > td:nth-child(2)::text').extract()
+			item['workLocation']=site.css('tr > td:nth-child(3)::text').extract()
+			item['recruitNumber']=site.css('tr > td:nth-child(4)::text').extract()
+			item['publishTime']=site.css('tr > td:nth-child(5)::text').extract()
+			items.append(item)
+
+		info('parsed'+str(response))
+		return items
+def _process_request(self,request):
+	info('process'+str(request))
+	return request
