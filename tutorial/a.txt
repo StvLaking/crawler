@@ -1,7 +1,0 @@
-
----------- V2Ray vmess URL / V2RayNG v0.4.1+ / V2RayN v2.1+ / 仅适合部分客户端 -------------
-
-[96mvmess://ewoidiI6ICIyIiwKInBzIjogIjIzM3YyLmNvbV92MnJheS5zdHZsLnRvcCIsCiJhZGQiOiAidjJyYXkuc3R2bC50b3AiLAoicG9ydCI6ICI0NDMiLAoiaWQiOiAiMTRhN2M0YzEtNWEyNS00ZGUwLWIwMzgtNTNmNzAyMzEyZjYyIiwKImFpZCI6ICIyMzMiLAoibmV0IjogIndzIiwKInR5cGUiOiAibm9uZSIsCiJob3N0IjogInYycmF5LnN0dmwudG9wIiwKInBhdGgiOiAiL3JheSIsCiJ0bHMiOiAidGxzIgp9Cg==[0m
-
-[93m免被墙..推荐使用JMS: [96mhttps://getjms.com[0m
-
